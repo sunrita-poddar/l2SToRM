@@ -30,4 +30,4 @@ Functions called by main.m:
 
 Results:
 
-The result is saved in the result.mat and a few frames have been saved in the video file result.avi.
+A few frames of the result are saved in the video file result.avi.
