@@ -19,7 +19,9 @@ Functions called by main.m:
 3. computeWeights.m: Code to compute the weight matrix from navigator data
 4. XL.m: Code to compute X*L for the conjugate gradient algorithm
 
-Data:
+Data: 
+
+Available at https://iowa-my.sharepoint.com/personal/jcb_uiowa_edu/_layouts/15/guestaccess.aspx?docid=1916f6f217e024ad8b5b2072adcdb3d79&authkey=Ac73aFG89vEXlOvf0bajhkI 
 
 The cardiac data was acquired in the ungated mode on a free-breathing subject using a FLASH sequence. The sampling pattern is a mix of golden angle radial lines and uniform radial navigators (refer to paper). Each frame has 10 radial lines, out of which 6 are golden angle lines and 4 are uniform radial navigator lines. Data for 1000 frames was acquired in around 40 s.
 
