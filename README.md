@@ -1,11 +1,13 @@
 
-Code for the l2-SToRM algorithm published in:
+# Dynamic MR Image Reconstruction using SToRM 
+
+## Publication:
 
 Sunrita Poddar and Mathews Jacob. "Dynamic MRI using smooThness regularization on manifolds (SToRM)." IEEE transactions on medical imaging 35.4 (2016): 1106-1115. 
 
 Please cite the above paper if you use the developed code.
 
-Code:
+# Code:
 
 main.m: Please run this code to generate the result in result.avi
 
@@ -19,7 +21,7 @@ Functions called by main.m:
 3. computeWeights.m: Code to compute the weight matrix from navigator data
 4. XL.m: Code to compute X*L for the conjugate gradient algorithm
 
-Data: 
+# Data: 
 
 Available at https://iowa-my.sharepoint.com/personal/jcb_uiowa_edu/_layouts/15/guestaccess.aspx?docid=1916f6f217e024ad8b5b2072adcdb3d79&authkey=Ac73aFG89vEXlOvf0bajhkI 
 
@@ -30,6 +32,6 @@ The cardiac data was acquired in the ungated mode on a free-breathing subject us
 3. csm.mat: Estimated coil sensitivity maps of size {image_size x number_of_coils}. Maps are obtained using ESPIRIT algorithm
 4. bCom.mat: Navigator lines (in original non-cartesian co-ordinates). The data corresponds to a coil that is close to the heart. Size of the bCom is {(number_of_readouts x number_of_navigator_lines) x number_of_frames}. 
 
-Results:
+# Results:
 
 A few frames of the result are saved in the video file result.avi.
