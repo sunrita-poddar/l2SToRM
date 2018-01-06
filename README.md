@@ -28,7 +28,7 @@ Code to compute ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%20X%20%5Cmath
 
 # Data: 
 
-Available at: https://iowa-my.sharepoint.com/personal/jcb_uiowa_edu/_layouts/15/guestaccess.aspx?docid=1916f6f217e024ad8b5b2072adcdb3d79&authkey=Ac73aFG89vEXlOvf0bajhkI 
+Available at: https://iowa-my.sharepoint.com/personal/jcb_uiowa_edu/_layouts/15/guestaccess.aspx?folderid=0a72e5307778348e9a18a820d9fa3624d&authkey=ARlI1w22gv4KBG9EJ3p-OQo
 
 The cardiac data was acquired in the ungated mode on a free-breathing subject using a FLASH sequence. The sampling pattern is a mix of golden angle radial lines and uniform radial navigators (refer to paper). Each frame has 10 radial lines, out of which 6 are golden angle lines and 4 are uniform radial navigator lines. Data for 1000 frames was acquired in around 40 s.
 
