@@ -1,7 +1,7 @@
 
 # Dynamic MR Image Reconstruction using SToRM 
 
-## Publication:
+# Publication:
 
 Sunrita Poddar and Mathews Jacob. "Dynamic MRI using smooThness regularization on manifolds (SToRM)." IEEE transactions on medical imaging 35.4 (2016): 1106-1115. 
 
@@ -9,21 +9,26 @@ Please cite the above paper if you use the developed code.
 
 # Code:
 
-main.m: Please run this code to generate the result in result.avi
+## main.m
+This code generates the result in result.avi, by solving the optimization problem:
 
-The above code solves the optimization problem:
 ![](https://latex.codecogs.com/gif.latex?%5Cmin_%7B%5Cmathbf%20X%7D%20%5C%7C%5Cmathbf%20A%20%5Cmathbf%20X-%20%5Cmathbf%20b%5C%7C%5E2%20&plus;%20%5Clambda%20Tr%28%5Cmathbf%20X%20%5Cmathbf%20L%20%5Cmathbf%20X%27%29)
-where the notation is described in the SToRM paper.
 
-Functions called by main.m:
-1. AhAX.m: Code to compute A'A(X) for the conjugate gradient algorithm
-2. Ahb.m:  Code to compute A'b for the conjugate gradient algorithm
-3. computeWeights.m: Code to compute the weight matrix from navigator data
-4. XL.m: Code to compute X*L for the conjugate gradient algorithm
+where the notation is described in the SToRM paper. In brief, ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%20X) is the series of MR image frames, ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%20A) is the Fourier under-sampling operator, ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%20b) is the matrix of data samples, ![](https://latex.codecogs.com/gif.latex?%5Clambda) is the regularization parameter and ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%20L) is the estimated manifold Laplacian.
+
+## Functions called by main.m:
+### AhAX.m
+Code to compute ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%20A%5EH%20%5Cmathbf%20A%20%28%5Cmathbf%20X%29) for the conjugate gradient algorithm
+### Ahb.m 
+Code to compute ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%20A%5EH%20%5Cmathbf%20b) for the conjugate gradient algorithm
+### computeWeights.m
+Code to compute the weight matrix from navigator data
+### XL.m
+Code to compute ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%20X%20%5Cmathbf%20L) for the conjugate gradient algorithm
 
 # Data: 
 
-Available at https://iowa-my.sharepoint.com/personal/jcb_uiowa_edu/_layouts/15/guestaccess.aspx?docid=1916f6f217e024ad8b5b2072adcdb3d79&authkey=Ac73aFG89vEXlOvf0bajhkI 
+Available at: https://iowa-my.sharepoint.com/personal/jcb_uiowa_edu/_layouts/15/guestaccess.aspx?docid=1916f6f217e024ad8b5b2072adcdb3d79&authkey=Ac73aFG89vEXlOvf0bajhkI 
 
 The cardiac data was acquired in the ungated mode on a free-breathing subject using a FLASH sequence. The sampling pattern is a mix of golden angle radial lines and uniform radial navigators (refer to paper). Each frame has 10 radial lines, out of which 6 are golden angle lines and 4 are uniform radial navigator lines. Data for 1000 frames was acquired in around 40 s.
 
