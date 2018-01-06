@@ -12,7 +12,7 @@ Please cite the above paper if you use the developed code.
 main.m: Please run this code to generate the result in result.avi
 
 The above code solves the optimization problem:
-min_X ||AX-b||^2 + lambda*trace(XLX')
+![](https://latex.codecogs.com/gif.latex?%5Cmin_%7B%5Cmathbf%20X%7D%20%5C%7C%5Cmathbf%20A%20%5Cmathbf%20X-%20%5Cmathbf%20b%5C%7C%5E2%20&plus;%20%5Clambda%20Tr%28%5Cmathbf%20X%20%5Cmathbf%20L%20%5Cmathbf%20X%27%29)
 where the notation is described in the SToRM paper.
 
 Functions called by main.m:
